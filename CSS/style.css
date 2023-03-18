@@ -5,6 +5,10 @@
     font-weight: 400;
 }
 
+
+/*INICIO NAV*/
+
+
 .navbar {
     background-color: #000000e5;
 }
@@ -50,6 +54,13 @@
     }
 }
 
+
+/*FIN NAV*/
+
+
+/*INICIO FOOTER*/
+
+
 footer {
     background-color: #000000e5;
 }
@@ -69,7 +80,7 @@ footer {
 
 .footer-copyright {
     color: #FF0000;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 .footer-ul-redes, .footer-ul-link {
@@ -82,8 +93,46 @@ footer {
     padding-top: 15px;
 }
 
+.footer-link-pag {
+    padding-left: 15px;
+}
+
+.footer-link-redes {
+    padding-right: 15px;
+}
+
+.justify-content-end-mio {
+    justify-content: end;
+    display: flex;
+}
+
+.justify-content-center-mio {
+    justify-content: center;
+    display: flex;
+}
+
+.justify-content-start-mio {
+    justify-content: start;
+    display: flex;
+}
+
+@media screen and (max-width:576px) {
+    .footer-ul-redes, .footer-ul-link {
+        font-size: 1rem;
+    }
+    .footer-copyright {
+        font-size: 1rem;
+    }
+}
+
+/*FIN FOOTER*/
+
+
+/*INICIO INDEX*/
+
+
 .container-general-noticias {
-    margin: 1vw 0 2.9vw;
+    margin: 15px 0;
 }
 
 .container-titulo-noticia {
@@ -109,31 +158,32 @@ footer {
 
 .texto-noticia {
     font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.container-primer-noticia, .container-segunda-noticia, .container-tercer-noticia {
+    display: flex;
 }
 
 .container-general-partidos {
-    margin: 1vw 0 2.9vw;
+    margin: 15px 0;
 }
 
-.cont-text-prox-part{
+.cont-text-prox-part {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 0.6vw;
 }
 
-.text-prox-part {
+.titulo-prox-part {
     display: inline-block;
     color: #FF0000;
     font-size: 5rem;
 }
 
-.mio {
-    padding: 0;
-}
-
 .img-logo {
-    width: 7vw;
+    width: 70px;
 }
 
 .cont-tit-part {
@@ -148,9 +198,9 @@ footer {
 }
 
 .cont-part {
-    margin: 0 20px;
     border: 1px solid #B8B8B8;
     border-radius: 2%;
+    display: flex;
 }
 .cont-dia {
     margin: 7px 0;
@@ -163,12 +213,141 @@ footer {
 }
 
 .tit-part {
-    font-size: 2.3rem;
+    font-size: 1.95rem;
 }
 
-.vs {
-    margin-top: 2vw;
+.container-img-inicio {
+    border-radius: 0;
 }
+
+.card-title-index-1 {
+    font-family: 'Covered By Your Grace', cursive;
+    color: #FF0000;
+    font-size: 12vw;
+    margin: 0;
+}
+
+.card-title-index-central {
+    font-family: 'Covered By Your Grace', cursive;
+    color: #FF0000;
+    font-size: 12vw;
+    margin: 0;
+}
+
+.row-container-partidos {
+    justify-content: space-evenly;
+}
+
+.container-p-ver-mas-noticias, .container-p-ver-mas-partidos {
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.container-p-ver-mas-noticias a, .container-p-ver-mas-partidos a {
+    text-decoration-color: #FF0000;
+}
+
+.p-ver-mas-noticias, .p-ver-mas-partidos {
+    margin-bottom: 0;
+    display: inline;
+    margin-right: 30px;
+    color: #FF0000;
+    font-weight: 700;
+}
+
+@media screen and (max-width:1075px) {
+    .titulo-noticia {
+        font-size: 4rem;
+    }
+
+    .texto-noticia {
+        font-size: 1.2rem;
+    }
+
+    .titulo-prox-part {
+        font-size: 4rem;
+    }
+
+    .tit-part {
+        font-size: 1.5rem;
+    }
+
+    .p-partidos {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .titulo-noticia {
+        font-size: 3.5rem;
+    }
+
+    .titulo-prox-part {
+        font-size: 3.5rem;
+    }
+
+    .tit-part {
+        font-size: 1.35rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .titulo-noticia {
+        font-size: 2.8rem;
+    }
+
+    .container-tercer-noticia {
+        display: none;
+    }
+
+    .cont-part-3 {
+        display: none;
+    }
+
+    .titulo-prox-part {
+        font-size: 2.8rem;
+    }
+
+    .tit-part {
+        font-size: 1.75rem;
+    }
+
+    .p-partidos {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .card-title-index-1 {
+        font-size: 14vw;
+    }
+    .container-p-ver-mas-noticias, .container-p-ver-mas-partidos {
+        justify-content: center;
+    }
+    .p-ver-mas-noticias, .p-ver-mas-partidos {
+        margin-right: 0;
+    }
+    .cont-part-1 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tit-part {
+        font-size: 1.4rem;
+    }
+    .titulo-prox-part {
+        font-size: 2.4rem;
+    }
+}
+
+
+/*FIN INDEX*/
+
+
+/*INICIO MELOLIFE*/
+
 
 .titulo-melolife-container {
     background-color: #FF0000;
@@ -183,17 +362,19 @@ footer {
     line-height: 1.5;
 }
 
+.container-general-bio {
+    margin-left: 15px;
+}
+
 .container-bio {
     padding: 0;
     border-left: 10px solid red;
-    margin-left: 15px;
     padding-top: 16px;
 }
 
 .container-bio-1 {
     padding: 0;
     border-left: 10px solid black;
-    margin-left: 15px;
     padding-top: 16px;
 }
 
@@ -209,41 +390,62 @@ footer {
 }
 
 .card-title-mio-bio {
-    font-size: 2.2vw;
-    margin-bottom: 4px;
+    font-size: 30px;
+    margin-bottom: 0px;
 }
 
 .card-text-mio-bio {
-    font-size: 1.7vw;
+    font-size: 20px;
+}
+
+@media screen and (max-width:992px) {
+    .card-title-mio-bio {
+        font-size: 22px;
+    }
+
+    .card-text-mio-bio {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width:767px) {
-    .titulo-melolife {
-        font-size: 13vw;
-    }
     .card-body-mio-bio {
         padding-bottom: 16px;
     }
+
     .card-title-mio-bio {
-        font-size: 3.3vw;
+        font-size: 21px;
     }
+
     .card-text-mio-bio {
-        font-size: 2.8vw;
+        font-size: 20px;
     }
+
     .container-bio {
         padding: 0;
         border-left: 15px solid red;
-        margin-left: 25px;
         padding-top: 16px;
     }
-    
+
     .container-bio-1 {
         padding: 0;
         border-left: 15px solid black;
-        margin-left: 25px;
         padding-top: 16px;
     }
 }
+
+@media screen and (max-width:576px) {
+    .card-text-mio-bio {
+        font-size: 17px;
+    }
+}
+
+
+/*FIN MELOLIFE*/
+
+
+/*INICIO MELOBASKET*/
+
 
 .titulo-melobasket-container {
     background-color: #FF0000;
@@ -270,7 +472,7 @@ footer {
 
 .container-p-basket {
     padding: 1vw 2vw;
-    font-size: 1.9vw;
+    font-size: 1.5rem;
 }
 
 .container-p-basket p {
@@ -289,11 +491,13 @@ footer {
     border-right: 25px solid #FF0000;
 }
 
-@media screen and (max-width:768px) {
-    .titulo-melobasket {
-        font-size: 13vw;
+@media screen and (max-width:992px) {
+    .container-p-basket {
+        font-size: 0.99rem;
     }
+}
 
+@media screen and (max-width:768px) {
     .container-iframe-basket {
         position: relative;
         padding-bottom: 56.25%;
@@ -327,10 +531,91 @@ footer {
         flex-direction: column-reverse;
     }
 
-    .container-p-basket p {
-        font-size: 16px;
+    .container-p-basket {
+        font-size: 1.25rem;
     }
 }
+
+@media screen and (max-width:450px) {
+    .titulo-melobasket {
+        font-size: 60px;
+    }
+}
+
+
+/*FIN MELOBASKET*/
+
+
+/*INICIO MELOSHOP*/
+
+
+.container-img-tienda {
+    margin-bottom: 24px;
+    border-radius: 0;
+}
+
+.card-img-mio {
+    border-radius: 0;
+}
+
+.card-img-overlay-mio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-title-meloshop {
+    font-family: 'Oswald', sans-serif;
+    color: #000000c4;
+    font-size: 14vw;
+}
+
+.card-mio-tienda {
+    border-color: #FF0000;
+    width: 15rem;
+}
+
+.card-title-meloshop-prendas {
+    color: #FF0000;
+    font-size: 30px;
+}
+
+.card-text-tienda {
+    font-size: 20px;
+}
+
+.btn-comprar {
+    background-color: #FFFFFF;
+    border-color:#FF0000;
+    color: #FF0000;
+    font-size: 20px;
+    margin-top: -14px;
+}
+
+.btn-comprar:hover {
+    background-color: #FF0000;
+    border-color: #FF0000;
+    color: #FFFFFF;
+}
+
+.btn-comprar:active {
+    background-color: #FF0000;
+    border-color: #FF0000;
+    color: #FFFFFF;
+}
+
+.card-subtitle-meloshop {
+    font-size: 17px;
+    color: #FF0000;
+    margin-bottom: 20px;
+}
+
+
+/*FIN MELOSHOP*/
+
+
+/*INICIO REGISTRO*/
+
 
 .registro-container {
     background-image: url(../IMG/lameloback3.jpg);
@@ -411,150 +696,27 @@ footer {
     .registro-container {
         padding: 7vw;
     }
+
     .registro {
         width: 90%;
         padding: 50px 20px;
     }
 }
 
-.container-img-tienda {
-    margin-bottom: 24px;
-    border-radius: 0;
-}
 
-.card-img-mio {
-    border-radius: 0;
-}
+/*FIN REGISTRO*/
 
-.card-img-overlay-mio {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.card-title-mio {
-    font-family: 'Oswald', sans-serif;
-    color: #000000c4;
-    font-size: 14vw;
-}
-
-.card-mio-tienda {
-    border-color: #FF0000;
-    width: 15rem;
-}
-
-.card-title-mio1 {
-    color: #FF0000;
-    font-size: 30px;
-}
-
-.card-text-tienda {
-    font-size: 20px;
-}
-
-.btn {
-    background-color: #FFFFFF;
-    border-color:#FF0000;
-    color: #FF0000;
-    font-size: 20px;
-    margin-top: -14px;
-}
-
-.btn:hover {
-    background-color: #FF0000;
-    border-color: #FF0000;
-    color: #FFFFFF;
-}
-
-.btn:active {
-    background-color: #FF0000;
-    border-color: #FF0000;
-    color: #FFFFFF;
-}
+/*GENERALES*/
 
 .row {
-    --bs-gutter-x: 0;
-}
-
-.card-subtitle {
-    font-size: 17px;
-    color: #FF0000;
-    margin-bottom: 20px;
-}
-
-.justify-content-end-mio {
-    justify-content: end;
-    display: flex;
-}
-
-.justify-content-center-mio {
-    justify-content: center;
-    display: flex;
-}
-
-.justify-content-start-mio {
-    justify-content: start;
-    display: flex;
+    --bs-gutter-x: 0rem;
 }
 
 .container-fluid {
     --bs-gutter-x: 0rem;
 }
 
-.footer-link-pag {
-    padding-left: 15px;
-}
-
-.footer-link-redes {
-    padding-right: 15px;
-}
-
-.card-title-index-1 {
-    font-family: 'Covered By Your Grace', cursive;
-    color: #FF0000;
-    font-size: 12vw;
-}
-
-.card-title-index-central {
-    font-family: 'Covered By Your Grace', cursive;
-    color: #FF0000;
-    font-size: 7vw;
-}
-
-.container-img-inicio {
-    border-radius: 0;
-}
-
-@media screen and (max-width:768px) {
-    .texto-noticia {
-        font-size: 2.5vw;
-    }
-    .p-partidos {
-        font-size: 3vw;
-        line-height: 1;
-        margin: 0;
-    }
-}
-
-@media screen and (max-width:576px) {
-    .ajuste-media {
-        justify-content: center;
-    }
-    .footer-logo-copy {
-        border-top: 2px solid #ff000050;
-        border-bottom: 2px solid #FF000050;
-        margin-top: 0;
-    }
-    .footer-link-redes, .footer-logo-copy {
-        padding-top: 15px;
-    }
-    .footer-link-redes {
-        padding-right: 0;
-    }
-    .footer-link-pag {
-        padding-left: 0;
-    }
-    .footer-ul-link, .footer-ul-redes, .footer-copyright {
-        font-size: 3.5vw;
-    }  
+.vs-container {
+    flex-wrap: wrap;
 }
