@@ -1,0 +1,4 @@
+@mixin titulos ($c-titulos, $f-titulos) {
+    color: $c-titulos;
+    font-size: $f-titulos;
+}
