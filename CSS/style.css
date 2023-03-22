@@ -5,6 +5,14 @@
   font-weight: 400;
 }
 
+body {
+  background-color: rgba(0, 0, 0, 0.8980392157);
+}
+
+main {
+  background-color: white;
+}
+
 .footer-ul-redes, .footer-ul-link {
   list-style-type: none;
   padding-left: 0;
@@ -93,7 +101,7 @@
 }
 
 .navbar {
-  background-color: rgba(0, 0, 0, 0.8980392157);
+  background-color: #0e0e0e;
 }
 
 .container-nav {
@@ -136,7 +144,7 @@
 }
 
 footer {
-  background-color: rgba(0, 0, 0, 0.8980392157);
+  background-color: #0e0e0e;
 }
 
 .container-footer {
@@ -203,7 +211,7 @@ footer {
 }
 
 .container-general-noticias {
-  margin: 15px 0;
+  padding: 15px 0;
 }
 
 .container-titulo-noticia {
@@ -262,7 +270,7 @@ footer {
 }
 
 .container-general-partidos {
-  margin: 15px 0;
+  padding: 15px 0;
 }
 
 .cont-text-prox-part {
