@@ -5,14 +5,6 @@
   font-weight: 400;
 }
 
-body {
-  background-color: rgba(0, 0, 0, 0.8980392157);
-}
-
-main {
-  background-color: white;
-}
-
 .footer-ul-redes, .footer-ul-link {
   list-style-type: none;
   padding-left: 0;
