@@ -1,0 +1,47 @@
+footer {
+    background-color: #0e0e0e;
+}
+.container-footer {
+    padding-top: 15px;
+}
+.footer-link-pag {
+    padding-left: 15px;
+}
+.footer-ul-link {
+    @extend %footer-ul;
+}
+.footer-li-link {
+    justify-content: start;
+    display: flex;
+}
+.footer-a-link {
+    @extend %footer-a;
+}
+.footer-logo-copy {
+    margin-top: 30px;
+}
+.footer-img {
+    justify-content: center;
+    display: flex;
+}
+.footer-copyright {
+    @include titulos ($color-rojo, 1.2rem);
+    justify-content: center;
+    display: flex;
+    @media screen and (max-width:576px) {
+        font-size: 1rem;
+    }
+}
+.footer-link-redes {
+    padding-right: 15px;
+}
+.footer-ul-redes {
+    @extend %footer-ul;
+}
+.footer-li-redes {
+    justify-content: end;
+    display: flex;
+}
+.footer-a-redes {
+    @extend %footer-a;
+}

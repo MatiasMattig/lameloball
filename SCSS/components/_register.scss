@@ -1,0 +1,67 @@
+.registro-container {
+    background-image: url(../IMG/lameloback3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px;
+    @media screen and (max-width:768px) {
+        padding: 7vw;
+    }
+}
+.registro {
+    background-color: #00000070;
+    width: 70%;
+    margin: auto;
+    color: $color-blanco;
+    padding: 50px 120px;
+    @media screen and (max-width:768px) {
+        width: 90%;
+        padding: 50px 20px;
+    }
+}
+.img-registro-container {
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    margin-top: 30px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.input-1 {
+    width: 100%;
+}
+.form-text {
+    color: $color-blanco;
+}
+.input-2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.buttons-registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons {
+    margin: 0 20px 10px;
+    padding: 5px;
+    background-color: $color-rojo;
+    border: 2px solid $color-blanco;
+    border-radius: 5px;
+    color: $color-blanco;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.boton-olv-tu-cont {
+    background-color: transparent;
+    border-color: transparent;
+    color: $color-blanco;
+}
+.texto-registro-container {
+    color: $color-blanco;
+    justify-content: center;
+    align-items: center;
+}

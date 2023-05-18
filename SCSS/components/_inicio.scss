@@ -1,0 +1,157 @@
+.container-img-inicio {
+    border-radius: 0;
+}
+.card-img-mio {
+    border-radius: 0;
+}
+.card-img-overlay-mio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-title-index-1 {
+    @extend %card-title-index;
+    @media screen and (max-width:576px) {
+        font-size: 14vw;
+    }
+}
+
+.container-general-noticias {
+    padding: 15px 0;
+}
+.container-titulo-noticia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+    .titulo-noticia {
+        display: inline-block;
+        @include titulos ($color-rojo, 5rem);
+        @media screen and (max-width:1075px) {
+            font-size: 4rem;
+        }
+        @media screen and (max-width:900px) {
+            font-size: 3.5rem;
+        }
+        @media screen and (max-width:768px) {
+            font-size: 2.8rem;
+        }
+    }
+}
+.container-noticias {
+    justify-content: space-evenly;
+}
+.container-primer-noticia, .container-segunda-noticia, .container-tercer-noticia {
+    display: flex;
+}
+.container-tercer-noticia {
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
+.cont-body-noticia {
+    padding: 5px;
+}
+.texto-noticia {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    @media screen and (max-width:1075px) {
+        font-size: 1.2rem;
+    }
+}
+.container-p-ver-mas-noticias {
+    @extend %cont-p-ver-mas;
+}
+
+.card-title-index-central {
+    @extend %card-title-index;
+}
+   
+.container-general-partidos {
+    padding: 15px 0;
+}
+.cont-text-prox-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.6vw;
+}
+
+.titulo-prox-part {
+    @include titulos ($color-rojo, 5rem);
+    display: inline-block;
+    @media screen and (max-width:1075px) {
+        font-size: 4rem;
+    }
+    @media screen and (max-width:900px) {
+        font-size: 3.5rem;
+    }
+    @media screen and (max-width:768px) {
+        font-size: 2.8rem;
+    }
+    @media screen and (max-width:400px) {
+        font-size: 2.4rem;
+    }
+}
+.row-container-partidos {
+    justify-content: space-evenly;
+}
+.cont-part {
+    border: 1px solid #B8B8B8;
+    border-radius: 2%;
+    display: flex;
+}
+.cont-part-1 {
+    @media screen and (max-width:576px) {
+        margin-bottom: 20px;
+    }
+}
+.cont-tit-part {
+    border-bottom: 1px solid #B8B8B8;
+    margin-bottom: 10px;
+    .tit-part {
+        font-size: 1.95rem;
+        @media screen and (max-width:1075px) {
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width:900px) {
+            font-size: 1.35rem;
+        }
+        @media screen and (max-width:768px) {
+            font-size: 1.75rem;
+        }
+        @media screen and (max-width: 400px) {
+            font-size: 1.4rem;
+        }
+    }
+}
+.img-logo {
+    width: 70px;
+}
+.vs-container {
+    flex-wrap: wrap;
+}
+.p-partidos {
+    font-size: 1.7rem;
+    line-height: 1;
+    margin: 0;
+    @media screen and (max-width:1075px) {
+        font-size: 1.4rem;
+    }
+}
+.cont-dia {
+    margin: 7px 0;
+    border-top: 1px solid #B8B8B8;
+    padding-top: 7px;
+}
+.cont-estadio {
+    margin: 7px 0;
+}
+.cont-part-3 {
+    @media screen and (max-width:768px) {
+        display: none;
+    }
+}
+.container-p-ver-mas-partidos {
+    @extend %cont-p-ver-mas;
+}
